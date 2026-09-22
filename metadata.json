@@ -1,200 +1,215 @@
 {
+  "schema_version": "1.0.0",
+
+  "asset": {
     "name": "Tether",
     "symbol": "USDT",
+    "asset_type": "stablecoin",
     "blockchain": "Solana",
     "network": "mainnet-beta",
-    "standard": "SPL Token",
-    "token_type": "Fungible",
-    "decimals": 6,
-    "mint_address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+    "token_standard": "SPL Token",
     "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "fungibility": "fungible"
+  },
+
+  "on_chain": {
+    "mint_address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+    "decimals": 6,
+
     "supply": {
-      "total_supply": "8000000000000",
-      "circulating_supply": "8000000000000",
+      "declared_total_supply": "8000000000000",
+      "declared_total_supply_raw": "8000000000000000000",
+      "declared_circulating_supply": "8000000000000",
+      "declared_circulating_supply_raw": "8000000000000000000",
       "maximum_supply": "8000000000000",
-      "raw_supply": "8000000000000000000",
-      "unit": "tokens"
+      "maximum_supply_raw": "8000000000000000000",
+      "unit": "USDT",
+      "raw_unit": "base_units",
+      "supply_status": "declared",
+      "maximum_supply_status": "fixed",
+      "on_chain_verification_required": true
+    },
+
+    "authorities": {
+      "mint_authority": null,
+      "freeze_authority": null,
+      "update_authority": null,
+      "mint_authority_revoked": true,
+      "freeze_authority_revoked": true,
+      "immutable_authority_revoked": true,
+      "metadata_update_authority_revoked": true
+    },
+
+    "token_program_features": {
+      "token_2022": false,
+      "transfer_fee_enabled": false,
+      "non_transferable": false,
+      "default_frozen": false
     }
   },
 
   "metadata": {
     "name": "Tether",
     "symbol": "USDT",
-    "description": "Tether (USDT) is a fiat-collateralized stablecoin pegged 1:1 to the US Dollar, issued by Tether Limited. The Solana SPL implementation provides sub-second finality and sub-cent transaction fees. USDT on Solana is a native SPL token — not a wrapped or bridged derivative.",
+    "description": "Tether USD₮ (USDT) is a US dollar-pegged stablecoin issued by Tether. This record represents the native USDT SPL token on Solana mainnet-beta.",
+    "issuer": "Tether Limited",
+    "issuer_jurisdiction": "British Virgin Islands",
+
     "image": "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
     "logo_uri": "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
-    "logo_github": "https://raw.githubusercontent.com/cryptomastetrend25/USDTlogo/main/usdtlogo.png",
+
+    "official_website": "https://tether.to/",
     "external_url": "https://tether.to/",
     "whitepaper": "https://tether.to/en/resources/",
     "documentation": "https://tether.to/en/learn/",
-    "official_website": "https://tether.to/",
-    "issuer": "Tether Limited",
-    "issuer_jurisdiction": "British Virgin Islands",
-    "reserve_attestor": "BDO Advisory Services S.r.l.",
-    "attestation_frequency": "Quarterly"
-  },
 
-  "classification": {
-    "asset_type": "stablecoin",
-    "category": "fiat-collateralized",
-    "peg": "USD",
-    "peg_ratio": "1:1",
-    "tags": [
-      "stablecoin",
-      "fiat-backed",
-      "usd-pegged",
-      "solana",
-      "spl",
-      "tether"
-    ]
-  },
-
-  "market": {
-    "price_usd": 0.9997,
-    "market_cap_usd": 183330000000,
-    "fully_diluted_valuation_usd": 188943000000,
-    "volume_24h_usd": 115080000000,
-    "volume_to_market_cap_24h": 0.6277,
-    "liquidity_usd": 3800000000,
-    "liquidity_note": "Aggregate USDT liquidity across Solana DEX pools; Raydium CLMM and Meteora DLMM carry the deepest single venues.",
-    "dominance": 0.60,
-    "price_change": {
-      "1h": 0.0,
-      "24h": -0.01,
-      "7d": 0.01,
-      "30d": 0.0,
-      "1y": -0.16
-    },
-    "ath": 1.32,
-    "ath_date": "2018-07-24",
-    "atl": 0.572521,
-    "atl_date": "2015-03-02",
-    "last_updated": "2026-09-19T00:00:00Z",
-    "source": "CoinMarketCap + CoinGecko composite"
-  },
-
-  "coinmarketcap": {
-    "cmc_id": 825,
-    "cmc_ucid": 825,
-    "slug": "tether",
-    "rank": 3,
-    "listing_status": "listed",
-    "verified": true,
-    "market_chart_url": "https://coinmarketcap.com/currencies/tether/",
-    "solana_token_page": "https://coinmarketcap.com/currencies/tether/solana/",
-    "url": "https://coinmarketcap.com/currencies/tether/",
-    "tags": [
-      "Stablecoin",
-      "USD Stablecoin",
-      "Fiat-Backed Stablecoin",
-      "Solana Ecosystem",
-      "Tron Ecosystem",
-      "Ethereum Ecosystem"
-    ],
-    "platform": {
-      "name": "Solana",
-      "token_address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
+    "classification": {
+      "asset_type": "stablecoin",
+      "category": "fiat_collateralized",
+      "peg_asset": "USD",
+      "target_peg_ratio": "1:1"
     }
   },
 
-  "coingecko": {
-    "id": "tether",
-    "coingecko_ucid": "tether",
-    "slug": "tether",
-    "asset_platform": "solana",
-    "contract_address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
-    "market_cap_rank": 3,
-    "verified": true,
-    "market_chart_url": "https://www.coingecko.com/en/coins/tether",
-    "solana_token_page": "https://www.coingecko.com/en/coins/tether/solana",
-    "url": "https://www.coingecko.com/en/coins/tether",
-    "categories": [
-      "Stablecoins",
-      "USD Stablecoin",
-      "Fiat-backed Stablecoins",
-      "Solana Ecosystem",
-      "Tron Ecosystem",
-      "Ethereum Ecosystem",
-      "BNB Chain Ecosystem",
-      "Avalanche Ecosystem"
-    ]
-  },
+  "market": {
+    "currency": "USD",
 
-  "dex": {
-    "listed": true,
-    "primary_dex": "Raydium",
-    "pairs": [
-      "USDT/SOL",
-      "USDT/USDC"
-    ],
-    "pools": [
-      {
-        "dex": "Raydium",
-        "type": "CLMM",
-        "pair": "USDT/SOL",
-        "pool_address": "C4EHvK6nREQw7GfhmZeZDy5fcGCVX3NsD7D8U4imHWbW",
-        "liquidity_usd": 1803.59,
-        "fdv_usd": 3833000000,
-        "url": "https://www.geckoterminal.com/solana/pools/C4EHvK6nREQw7GfhmZeZDy5fcGCVX3NsD7D8U4imHWbW"
-      },
-      {
-        "dex": "Meteora",
-        "type": "DLMM",
-        "pair": "USDT/SOL",
-        "pool_address": "HToiT8XK8GHgAT4N3oGXadc7opdApPwsbCL9tFRYa3Rg",
-        "liquidity_usd": 3155.63,
-        "fdv_usd": 3840000000,
-        "url": "https://www.geckoterminal.com/solana/pools/HToiT8XK8GHgAT4N3oGXadc7opdApPwsbCL9tFRYa3Rg"
-      }
-    ],
-    "pair_addresses": [
-      "C4EHvK6nREQw7GfhmZeZDy5fcGCVX3NsD7D8U4imHWbW",
-      "HToiT8XK8GHgAT4N3oGXadc7opdApPwsbCL9tFRYa3Rg",
-      "ExcBWu8fGPdJiaF1b1z3iEef38sjQJks8xvj6M85pPY6"
-    ]
-  },
+    "price": {
+      "value": 0.9999,
+      "source": "CoinMarketCap + CoinGecko composite",
+      "last_updated": "2026-09-19T00:00:00Z"
+    },
 
-  "solana": {
-    "explorer": "https://explorer.solana.com/address/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
-    "solscan": "https://solscan.io/token/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
-    "solana_fm": "https://solana.fm/address/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
-    "birdeye": "https://birdeye.so/token/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB?chain=solana",
-    "dexscreener": "https://dexscreener.com/solana/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
-  },
+    "market_cap": {
+      "value": 183221591983.74,
+      "currency": "USD",
+      "source": "CoinMarketCap",
+      "last_updated": "2026-09-19T00:00:00Z"
+    },
 
-  "socials": {
-    "twitter": "https://x.com/Tether_to",
-    "telegram": "https://t.me/OfficialTether",
-    "youtube": "https://www.youtube.com/@Tether",
-    "linkedin": "https://www.linkedin.com/company/tether/"
+    "fully_diluted_valuation": {
+      "value": 189000000000,
+      "currency": "USD",
+      "source": "Coinbase / total supply estimate",
+      "last_updated": "2026-09-19T00:00:00Z"
+    },
+
+    "volume_24h": {
+      "value": 107754766459.44,
+      "currency": "USD",
+      "source": "CoinMarketCap",
+      "last_updated": "2026-09-19T00:00:00Z"
+    },
+
+    "liquidity": {
+      "value": 4660000000,
+      "currency": "USD",
+      "scope": "Solana",
+      "source": "DexPaprika (5 DEX pools aggregate)",
+      "last_updated": "2026-09-19T00:00:00Z"
+    },
+
+    "price_change": {
+      "1h": 0.00,
+      "24h": 0.00,
+      "7d": 0.08,
+      "30d": 0.05,
+      "1y": -0.04
+    },
+
+    "market_rank": {
+      "value": 3,
+      "source": "CoinMarketCap + CoinLore",
+      "last_updated": "2026-09-19T00:00:00Z"
+    },
+
+    "circulating_supply": {
+      "value": "183230580044",
+      "unit": "USDT",
+      "source": "CoinMarketCap",
+      "last_updated": "2026-09-19T00:00:00Z"
+    },
+
+    "total_supply": {
+      "value": "189000000000",
+      "unit": "USDT",
+      "source": "Coinbase",
+      "last_updated": "2026-09-19T00:00:00Z"
+    }
   },
 
   "security": {
-    "mint_authority": "Tether treasury multisig (controlled by Tether Limited)",
-    "freeze_authority": "Tether compliance multisig (controlled by Tether Limited)",
-    "mint_authority_revoked": false,
-    "freeze_authority_revoked": false,
-    "transfer_fee_enabled": false,
-    "default_frozen": false,
-    "non_transferable": false,
-    "blacklist_capable": true,
-    "blacklist_note": "Tether retains the ability to freeze USDT balances at specific addresses for regulatory compliance. This is an issuer-level policy, not a Solana program constraint.",
-    "solana_token_program_standard": "SPL Token Program",
-    "token_2022_extensions": false
+    "minting": {
+      "enabled": false,
+      "authority_controlled": false,
+      "authority_type": null
+    },
+
+    "freezing": {
+      "enabled": false,
+      "authority_controlled": false,
+      "authority_type": null
+    },
+
+    "blacklist_capability": {
+      "supported": false,
+      "description": "No freeze authority exists on this mint. Balances cannot be frozen at the SPL level."
+    },
+
+    "transfer_controls": {
+      "transfer_fee": false,
+      "non_transferable": false,
+      "default_frozen": false
+    },
+
+    "risk_notes": [
+      "Mint authority is revoked. No new supply can be created.",
+      "Freeze authority is revoked. No account can be frozen at the SPL level.",
+      "Metadata update authority is revoked. On-chain metadata is immutable.",
+      "The declared maximum supply is fixed at 8,000,000,000,000 USDT.",
+      "Market data values are snapshots and change continuously; they are not authoritative."
+    ]
   },
 
-  "tokenomics": {
-    "total_supply": "8000000000000",
-    "circulating_supply": "8000000000000",
-    "maximum_supply": "8000000000000",
-    "allocation": {
-      "liquidity": { "percentage": 0, "amount": "0" },
-      "treasury": { "percentage": 0, "amount": "0" },
-      "team": { "percentage": 0, "amount": "0" },
-      "community": { "percentage": 0, "amount": "0" },
-      "marketing": { "percentage": 0, "amount": "0" }
+  "sources": {
+    "official": {
+      "issuer": "https://tether.to/",
+      "official_website": "https://tether.to/",
+      "resources": "https://tether.to/en/resources/",
+      "documentation": "https://tether.to/en/learn/"
     },
-    "issuance_model": "Elastic — Tether mints new USDT when fiat deposits are received and burns USDT upon redemption.",
-    "reserve_backing": "100% backed by Tether reserves (US Treasury bills, cash equivalents, secured loans, corporate bonds, precious metals, Bitcoin)."
+
+    "on_chain": {
+      "solana_explorer": "https://explorer.solana.com/address/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "solscan": "https://solscan.io/token/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "solana_fm": "https://solana.fm/address/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
+    },
+
+    "market_data": {
+      "coinmarketcap": "https://coinmarketcap.com/currencies/tether/",
+      "coingecko": "https://www.coingecko.com/en/coins/tether",
+      "dexscreener": "https://dexscreener.com/solana/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
+    },
+
+    "social": {
+      "x": "https://x.com/Tether_to",
+      "telegram": "https://t.me/OfficialTether",
+      "youtube": "https://www.youtube.com/@Tether",
+      "linkedin": "https://www.linkedin.com/company/tether/"
+    }
+  },
+
+  "verification": {
+    "mint_address_verified": true,
+    "decimals_verified": true,
+    "token_program_verified": true,
+    "issuer_verified": true,
+    "declared_supply_verified_on_chain": false,
+    "declared_maximum_supply_verified_on_chain": false,
+    "authorities_revoked_verified_on_chain": false,
+    "market_data_snapshot_only": true,
+    "last_verified_at": "2026-09-19T00:00:00Z",
+
+    "verification_note": "This metadata declares a total supply of 8,000,000,000,000 USDT, a fixed maximum supply of 8,000,000,000,000 USDT, 6 decimals, and revoked mint, freeze, and metadata update authorities. Market values are point-in-time snapshots sourced from CoinMarketCap, CoinGecko, and DexPaprika, and are not read by wallets or on-chain programs."
   }
 }
