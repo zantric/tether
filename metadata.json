@@ -1,9 +1,4 @@
 {
-  "schema_version": "1.0.0",
-  "generated_for": "Tether (USDT) — Solana Mainnet",
-  "last_updated": "2026-09-19T00:00:00Z",
-
-  "token": {
     "name": "Tether",
     "symbol": "USDT",
     "blockchain": "Solana",
