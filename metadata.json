@@ -55,8 +55,8 @@
     "issuer": "Tether Limited",
     "issuer_jurisdiction": "British Virgin Islands",
 
-    "image": "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
-    "logo_uri": "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+    "image": "https://cdn.jsdelivr.net/gh/zantric/dtlogo@v1.0.0/IMG_0505.png",
+    "logo_uri": "https://cdn.jsdelivr.net/gh/zantric/dtlogo@v1.0.0/IMG_0505.png",
 
     "official_website": "https://tether.to/",
     "external_url": "https://tether.to/",
